@@ -38,6 +38,7 @@ class SearchViewController: UIViewController {
     @objc func navigateToFollowersListVC(){
         
         guard (!(searchView.userNameTextField.text?.isEmpty ?? true)) else{
+            presentAlertOnMainThread(title: "Empty username", message: "Please enter username, we need to know who to look for", buttonTitle: "OK")
             return
         }
         

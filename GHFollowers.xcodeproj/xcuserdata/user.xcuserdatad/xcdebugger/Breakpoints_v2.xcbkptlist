@@ -52,5 +52,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DADE0AD-43B5-4B8A-A18A-24B6A60588F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GHFollowers/Presentation/AlertView/Views/AlertView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "addContainerView(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC275C33-6B89-4725-AF1E-C17FFA5596FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GHFollowers/Presentation/AlertView/Views/AlertView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "addTitleLabelView(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC275C33-6B89-4725-AF1E-C17FFA5596FA - e5ea7c8e5f73845a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GHFollowers.AlertView.addTitleLabelView() -&gt; ()"
+                  moduleName = "GHFollowers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/xcode_projects/GHFollowers/GHFollowers/Presentation/AlertView/Views/AlertView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "FC275C33-6B89-4725-AF1E-C17FFA5596FA - e5ea7c8e5f73847b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GHFollowers.AlertView.addTitleLabelView() -&gt; ()"
+                  moduleName = "GHFollowers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/xcode_projects/GHFollowers/GHFollowers/Presentation/AlertView/Views/AlertView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

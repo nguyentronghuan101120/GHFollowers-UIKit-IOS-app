@@ -23,6 +23,11 @@
 		CEAB8F922BAC2B0C00061C24 /* FollowersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F912BAC2B0C00061C24 /* FollowersListViewController.swift */; };
 		CEAB8F942BAC333E00061C24 /* AppConfigures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F932BAC333E00061C24 /* AppConfigures.swift */; };
 		CEAB8F9A2BAC3B0600061C24 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F992BAC3B0600061C24 /* SearchView.swift */; };
+		CEAB8FA52BB11B4800061C24 /* AppTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8FA42BB11B4800061C24 /* AppTitleLabel.swift */; };
+		CEAB8FA72BB11C4C00061C24 /* AppBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8FA62BB11C4C00061C24 /* AppBodyLabel.swift */; };
+		CEAB8FAE2BB121A200061C24 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8FAD2BB121A200061C24 /* AlertViewController.swift */; };
+		CEAB8FB02BB121BA00061C24 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8FAF2BB121BA00061C24 /* AlertView.swift */; };
+		CEAB8FB32BB12FD600061C24 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8FB22BB12FD600061C24 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		CEAB8F912BAC2B0C00061C24 /* FollowersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewController.swift; sourceTree = "<group>"; };
 		CEAB8F932BAC333E00061C24 /* AppConfigures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigures.swift; sourceTree = "<group>"; };
 		CEAB8F992BAC3B0600061C24 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CEAB8FA42BB11B4800061C24 /* AppTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleLabel.swift; sourceTree = "<group>"; };
+		CEAB8FA62BB11C4C00061C24 /* AppBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBodyLabel.swift; sourceTree = "<group>"; };
+		CEAB8FAD2BB121A200061C24 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		CEAB8FAF2BB121BA00061C24 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		CEAB8FB22BB12FD600061C24 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,7 @@
 		CEAB8F882BABE6DA00061C24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB8FB12BB12FC100061C24 /* extentions */,
 				CEAB8F892BABE6F800061C24 /* TabBar.swift */,
 				CEAB8F932BAC333E00061C24 /* AppConfigures.swift */,
 			);
@@ -154,6 +165,7 @@
 		CEAB8F972BAC3A5E00061C24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB8FAA2BB1213600061C24 /* AlertView */,
 				CEAB8FA12BAC3F1100061C24 /* FollowersListView */,
 				CEAB8F9E2BAC3EDB00061C24 /* FavoriteListView */,
 				CEAB8F9D2BAC3EC700061C24 /* CommonViews */,
@@ -192,6 +204,8 @@
 			children = (
 				CEAB8F8D2BABEACB00061C24 /* AppButton.swift */,
 				CEAB8F8F2BAC11C400061C24 /* AppTextField.swift */,
+				CEAB8FA42BB11B4800061C24 /* AppTitleLabel.swift */,
+				CEAB8FA62BB11C4C00061C24 /* AppBodyLabel.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -242,6 +256,40 @@
 				CEAB8F912BAC2B0C00061C24 /* FollowersListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEAB8FAA2BB1213600061C24 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8FAC2BB1214C00061C24 /* ViewControllers */,
+				CEAB8FAB2BB1214700061C24 /* Views */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		CEAB8FAB2BB1214700061C24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8FAF2BB121BA00061C24 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEAB8FAC2BB1214C00061C24 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8FAD2BB121A200061C24 /* AlertViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEAB8FB12BB12FC100061C24 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB8FB22BB12FD600061C24 /* UIViewControllerExt.swift */,
+			);
+			name = extentions;
+			path = "ễtntions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,15 +423,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB8F5B2BABD23C00061C24 /* GHFollowers.xcdatamodeld in Sources */,
+				CEAB8FA52BB11B4800061C24 /* AppTitleLabel.swift in Sources */,
+				CEAB8FB32BB12FD600061C24 /* UIViewControllerExt.swift in Sources */,
 				CEAB8F9A2BAC3B0600061C24 /* SearchView.swift in Sources */,
 				CEAB8F922BAC2B0C00061C24 /* FollowersListViewController.swift in Sources */,
 				CEAB8F512BABD23C00061C24 /* AppDelegate.swift in Sources */,
 				CEAB8F842BABE0FC00061C24 /* SearchViewController.swift in Sources */,
 				CEAB8F8A2BABE6F800061C24 /* TabBar.swift in Sources */,
+				CEAB8FA72BB11C4C00061C24 /* AppBodyLabel.swift in Sources */,
 				CEAB8F862BABE18500061C24 /* FavoriteListViewController.swift in Sources */,
 				CEAB8F942BAC333E00061C24 /* AppConfigures.swift in Sources */,
 				CEAB8F8E2BABEACB00061C24 /* AppButton.swift in Sources */,
 				CEAB8F532BABD23C00061C24 /* SceneDelegate.swift in Sources */,
+				CEAB8FB02BB121BA00061C24 /* AlertView.swift in Sources */,
+				CEAB8FAE2BB121A200061C24 /* AlertViewController.swift in Sources */,
 				CEAB8F902BAC11C400061C24 /* AppTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
