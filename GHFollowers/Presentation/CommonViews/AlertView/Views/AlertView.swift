@@ -17,7 +17,7 @@ final class AlertView{
     func addSubviews(_ view: UIView,alertTitle: String,buttonTitle: String,selector: Selector, alertBodyTitle: String,alertViewControllerToDismiss: Any?) {
         addContainerView(view)
         addTitleLabelView(alertTitle)
-        addActionButtonView(buttonTitle: buttonTitle, selector: selector,alertViewControllerToDismiss: alertViewControllerToDismiss)
+        addActionButtonView(buttonTitle: buttonTitle, selector: selector,alertViewControllerToDismiss: alertViewControllerToDismiss as Any)
         addBodyLabelView(alertBodyTitle)
     }
       
