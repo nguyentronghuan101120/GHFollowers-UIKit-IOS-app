@@ -13,6 +13,7 @@
 		CE5071AD2BB3AFA400D3E924 /* FollowerAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5071AC2BB3AFA400D3E924 /* FollowerAvatarImageView.swift */; };
 		CE5071AF2BB3B3B700D3E924 /* FollowerListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5071AE2BB3B3B700D3E924 /* FollowerListCollectionView.swift */; };
 		CE5071B22BB40A8D00D3E924 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5071B12BB40A8D00D3E924 /* UIHelper.swift */; };
+		CEA6080C2BBD522100B7C733 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6080B2BBD522100B7C733 /* EmptyView.swift */; };
 		CEAB8F512BABD23C00061C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F502BABD23C00061C24 /* AppDelegate.swift */; };
 		CEAB8F532BABD23C00061C24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F522BABD23C00061C24 /* SceneDelegate.swift */; };
 		CEAB8F5B2BABD23C00061C24 /* GHFollowers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEAB8F592BABD23C00061C24 /* GHFollowers.xcdatamodeld */; };
@@ -64,6 +65,7 @@
 		CE5071AC2BB3AFA400D3E924 /* FollowerAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerAvatarImageView.swift; sourceTree = "<group>"; };
 		CE5071AE2BB3B3B700D3E924 /* FollowerListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListCollectionView.swift; sourceTree = "<group>"; };
 		CE5071B12BB40A8D00D3E924 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		CEA6080B2BBD522100B7C733 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		CEAB8F4D2BABD23C00061C24 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB8F502BABD23C00061C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB8F522BABD23C00061C24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 				CE43E7E82BB50282005288C3 /* ImageLoader.swift */,
 			);
 			path = UIHelper;
+			sourceTree = "<group>";
+		};
+		CEA6080A2BBD51D300B7C733 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6080B2BBD522100B7C733 /* EmptyView.swift */,
+			);
+			path = EmptyView;
 			sourceTree = "<group>";
 		};
 		CEAB8F442BABD23C00061C24 = {
@@ -193,6 +203,7 @@
 		CEAB8F972BAC3A5E00061C24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CEA6080A2BBD51D300B7C733 /* EmptyView */,
 				CEAB8FA12BAC3F1100061C24 /* FollowersListView */,
 				CEAB8F9E2BAC3EDB00061C24 /* FavoriteListView */,
 				CEAB8F9D2BAC3EC700061C24 /* CommonViews */,
@@ -542,6 +553,7 @@
 				CEAB8F9A2BAC3B0600061C24 /* SearchView.swift in Sources */,
 				CEAB8F922BAC2B0C00061C24 /* FollowersListViewController.swift in Sources */,
 				CEAB8F512BABD23C00061C24 /* AppDelegate.swift in Sources */,
+				CEA6080C2BBD522100B7C733 /* EmptyView.swift in Sources */,
 				CE5071AD2BB3AFA400D3E924 /* FollowerAvatarImageView.swift in Sources */,
 				CEAB8FC62BB2A9E800061C24 /* NetworkError.swift in Sources */,
 				CEAB8F842BABE0FC00061C24 /* SearchViewController.swift in Sources */,

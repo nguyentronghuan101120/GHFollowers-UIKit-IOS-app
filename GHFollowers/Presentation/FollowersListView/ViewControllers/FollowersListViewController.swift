@@ -53,17 +53,28 @@ class FollowersListViewController: UIViewController{
     }
 
     func getListFollowers(page: Int){
+        showLoadingView()
                 Task.init {
                 do {
                     let followers = try await NetworkManager.shared.getListFollowers(username: userName, page: page)
                     
                     if followers.count > 100 {self.hasMoreFollower = false} else { self.hasMoreFollower = true}
                     
-                   
-                    self.listFollower.append(contentsOf: followers)
-                    self.updateData()
+                    if followers.isEmpty{
+                       let message = "This user doesn't have any followers"
+                        DispatchQueue.main.async{
+                            self.showEmptyStateView(message: message, view: self.view)
+                        }
+                    }
+                    else{
+                        self.listFollower.append(contentsOf: followers)
+                        self.updateData()
+                    }
+                 
+                    self.dismissLoadingView()
                 } catch {
                     presentAlertOnMainThread(title: "Error", message: error.localizedDescription, buttonTitle: "OK")
+                    self.dismissLoadingView()
                 }
             }
     }

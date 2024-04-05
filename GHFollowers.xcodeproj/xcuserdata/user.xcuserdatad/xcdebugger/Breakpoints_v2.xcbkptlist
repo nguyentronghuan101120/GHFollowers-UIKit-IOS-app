@@ -256,8 +256,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "FollowersListViewController"
-            landmarkType = "3">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,8 +270,8 @@
             filePath = "GHFollowers/Presentation/FollowersListView/ViewControllers/FollowersListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "updateData()"
             landmarkType = "7">
             <Locations>
@@ -318,8 +318,8 @@
             filePath = "GHFollowers/Presentation/FollowersListView/ViewControllers/FollowersListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "updateData()"
             landmarkType = "7">
             <Locations>
@@ -426,8 +426,8 @@
             filePath = "GHFollowers/Presentation/FollowersListView/ViewControllers/FollowersListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "configureDataSource()"
             landmarkType = "7">
             <Locations>
@@ -504,8 +504,8 @@
             filePath = "GHFollowers/Presentation/FollowersListView/ViewControllers/FollowersListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "configureDataSource()"
             landmarkType = "7">
             <Locations>
@@ -600,8 +600,8 @@
             filePath = "GHFollowers/Presentation/FollowersListView/ViewControllers/FollowersListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "updateData()"
             landmarkType = "7">
             <Locations>
