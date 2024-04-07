@@ -9,21 +9,14 @@
 //import UIKit
 //
 //class ImageLoader {
-//    var image: UIImage = UIImage(named: "avatar-placeholder")!
-//    
-//    func load(fromUrlString: String) -> UIImage{
-//
-//             NetworkManager.shared.downloadedImage(fromURLString: fromUrlString){
-//                uiImage in
-//                 
-//                 guard let uiImage = uiImage else {return}
-//                 
-//                 DispatchQueue.main.async{
-//                     self.image = uiImage
-//                 }
+//    static func loadFromURL(fromUrlString: String) {
+//        Task.init {
+//            do{
+//                return try await NetworkManager.shared.downloadedImage(fromURLString: fromUrlString)
 //            }
-//        
-//        return image
+//            catch {
+//                return UIImage(named: "avatar-placeholder")!
+//            }
 //        }
-//
+//    }
 //}

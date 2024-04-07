@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 final class AppBodyLabel: UILabel{
-    init(textAlignment: NSTextAlignment){
+    
+    init(textAlignment: NSTextAlignment = .center, numberOfLines: Int = 1){
         super.init(frame: .zero)
         
         self.textAlignment = textAlignment
@@ -19,6 +20,7 @@ final class AppBodyLabel: UILabel{
         minimumScaleFactor = 0.75
         lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
+        self.numberOfLines = numberOfLines
     }
     
     required init?(coder: NSCoder) {

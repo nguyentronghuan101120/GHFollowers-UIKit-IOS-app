@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF66F59D2BC135E20042ECCF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59C2BC135E20042ECCF /* UserInfoView.swift */; };
+		BF66F59F2BC135FC0042ECCF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */; };
+		BF66F5A12BC245AF0042ECCF /* UserInforHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */; };
+		BF66F5A32BC245BC0042ECCF /* UserInforViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */; };
 		CE43E7E92BB50282005288C3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43E7E82BB50282005288C3 /* ImageLoader.swift */; };
 		CE43E7EB2BB51248005288C3 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43E7EA2BB51248005288C3 /* NetworkImage.swift */; };
 		CE5071AB2BB3AEF800D3E924 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5071AA2BB3AEF800D3E924 /* FollowerCell.swift */; };
@@ -59,6 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF66F59C2BC135E20042ECCF /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforHeaderView.swift; sourceTree = "<group>"; };
+		BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforViewBody.swift; sourceTree = "<group>"; };
 		CE43E7E82BB50282005288C3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		CE43E7EA2BB51248005288C3 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		CE5071AA2BB3AEF800D3E924 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
@@ -122,6 +130,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF66F5992BC1354C0042ECCF /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				BF66F59B2BC135D00042ECCF /* ViewControllers */,
+				BF66F59A2BC135CC0042ECCF /* Views */,
+			);
+			name = UserInfoView;
+			path = "ỦeInfoView";
+			sourceTree = "<group>";
+		};
+		BF66F59A2BC135CC0042ECCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF66F59C2BC135E20042ECCF /* UserInfoView.swift */,
+				BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */,
+				BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF66F59B2BC135D00042ECCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CE5071B02BB40A7000D3E924 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +229,7 @@
 			children = (
 				CE5071B02BB40A7000D3E924 /* UIHelper */,
 				CEAB8FC22BB2A71700061C24 /* Manager */,
-				CEAB8FB12BB12FC100061C24 /* extentions */,
+				CEAB8FB12BB12FC100061C24 /* Extentions */,
 				CEAB8F892BABE6F800061C24 /* TabBar.swift */,
 				CEAB8F932BAC333E00061C24 /* AppConfigures.swift */,
 			);
@@ -203,6 +239,7 @@
 		CEAB8F972BAC3A5E00061C24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BF66F5992BC1354C0042ECCF /* UserInfoView */,
 				CEA6080A2BBD51D300B7C733 /* EmptyView */,
 				CEAB8FA12BAC3F1100061C24 /* FollowersListView */,
 				CEAB8F9E2BAC3EDB00061C24 /* FavoriteListView */,
@@ -326,12 +363,12 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CEAB8FB12BB12FC100061C24 /* extentions */ = {
+		CEAB8FB12BB12FC100061C24 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				CEAB8FB22BB12FD600061C24 /* UIViewControllerExt.swift */,
 			);
-			name = extentions;
+			name = Extentions;
 			path = "ễtntions";
 			sourceTree = "<group>";
 		};
@@ -554,10 +591,14 @@
 				CEAB8F922BAC2B0C00061C24 /* FollowersListViewController.swift in Sources */,
 				CEAB8F512BABD23C00061C24 /* AppDelegate.swift in Sources */,
 				CEA6080C2BBD522100B7C733 /* EmptyView.swift in Sources */,
+				BF66F5A12BC245AF0042ECCF /* UserInforHeaderView.swift in Sources */,
 				CE5071AD2BB3AFA400D3E924 /* FollowerAvatarImageView.swift in Sources */,
 				CEAB8FC62BB2A9E800061C24 /* NetworkError.swift in Sources */,
 				CEAB8F842BABE0FC00061C24 /* SearchViewController.swift in Sources */,
+				BF66F59F2BC135FC0042ECCF /* UserInfoViewController.swift in Sources */,
 				CEAB8F8A2BABE6F800061C24 /* TabBar.swift in Sources */,
+				BF66F59D2BC135E20042ECCF /* UserInfoView.swift in Sources */,
+				BF66F5A32BC245BC0042ECCF /* UserInforViewBody.swift in Sources */,
 				CE5071AB2BB3AEF800D3E924 /* FollowerCell.swift in Sources */,
 				CEAB8FA72BB11C4C00061C24 /* AppBodyLabel.swift in Sources */,
 				CEAB8F862BABE18500061C24 /* FavoriteListViewController.swift in Sources */,

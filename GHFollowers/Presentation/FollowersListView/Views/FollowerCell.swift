@@ -43,19 +43,19 @@ class FollowerCell: UICollectionViewCell{
     
     func set(follower: FollowerResponse){
         usernameLabel.text = follower.login
-        loadImage(fromUrlString: follower.avatarUrl ?? "")
+        loadImage(from: follower.avatarUrl ?? "")
     }
     
-    func loadImage(fromUrlString: String){
-        NetworkManager.shared.downloadedImage(fromURLString: fromUrlString){
-           uiImage in
-            
-            guard let uiImage = uiImage else {return}
-            
-            DispatchQueue.main.async{
-                self.avatarImageView.image = uiImage
+    func loadImage(from urlImage: String){
+        Task.init {
+            do{
+                avatarImageView.image =    try await NetworkManager.shared.downloadedImage(fromURLString: urlImage)
             }
-       }
+            catch {
+                avatarImageView.image =    UIImage(named: "avatar-placeholder")!
+            }
+        }
+        
     }
     
 }

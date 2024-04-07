@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 final class AppTitleLabel: UILabel{
-    init(textAlignment: NSTextAlignment, fontSize: CGFloat){
+    
+    init(textAlignment: NSTextAlignment = .center, fontSize: CGFloat = 24){
         super.init(frame: .zero)
         
         self.textAlignment = textAlignment
