@@ -22,7 +22,7 @@ class UserInfoViewController: UIViewController{
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
         getUserDetail()
-       
+        
     }
     
     @objc func dismissVC(){
@@ -31,20 +31,23 @@ class UserInfoViewController: UIViewController{
     
     func getUserDetail(){
         showLoadingView()
-                Task.init {
-                do {
-                    let data = try await NetworkManager.shared.getUserDetail(username: userName)
-                 
-                    userDetail = data
-                    
-                    self.dismissLoadingView()
-                    
-                    userInfoView.addSubView(view,data: userDetail!)
-                } catch {
-                    presentAlertOnMainThread(title: "Error", message: error.localizedDescription, buttonTitle: "OK")
-                    self.dismissLoadingView()
-                }
+        Task.init {
+            do {
+                let data = try await NetworkManager.shared.getUserDetail(username: userName)
+                
+                userDetail = data
+                
+                self.dismissLoadingView()
+                
+                
+                view.addSubview(userInfoView)
+                userInfoView.configureViews(data,view)
+                
+            } catch {
+                presentAlertOnMainThread(title: "Error", message: error.localizedDescription, buttonTitle: "OK")
+                self.dismissLoadingView()
             }
+        }
     }
     
     

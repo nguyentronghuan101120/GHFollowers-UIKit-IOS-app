@@ -10,7 +10,10 @@
 		BF66F59D2BC135E20042ECCF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59C2BC135E20042ECCF /* UserInfoView.swift */; };
 		BF66F59F2BC135FC0042ECCF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */; };
 		BF66F5A12BC245AF0042ECCF /* UserInforHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */; };
-		BF66F5A32BC245BC0042ECCF /* UserInforViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */; };
+		BF66F5A32BC245BC0042ECCF /* UserInforCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */; };
+		BFDA03C52BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA03C42BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift */; };
+		BFDA03D32BC3FFFD000F3D70 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA03D22BC3FFFD000F3D70 /* StringExt.swift */; };
+		BFDA03D52BC40205000F3D70 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA03D42BC40205000F3D70 /* DateExt.swift */; };
 		CE43E7E92BB50282005288C3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43E7E82BB50282005288C3 /* ImageLoader.swift */; };
 		CE43E7EB2BB51248005288C3 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43E7EA2BB51248005288C3 /* NetworkImage.swift */; };
 		CE5071AB2BB3AEF800D3E924 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5071AA2BB3AEF800D3E924 /* FollowerCell.swift */; };
@@ -66,7 +69,10 @@
 		BF66F59C2BC135E20042ECCF /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforHeaderView.swift; sourceTree = "<group>"; };
-		BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforViewBody.swift; sourceTree = "<group>"; };
+		BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforCardView.swift; sourceTree = "<group>"; };
+		BFDA03C42BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabelWithLeadingIcon.swift; sourceTree = "<group>"; };
+		BFDA03D22BC3FFFD000F3D70 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		BFDA03D42BC40205000F3D70 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		CE43E7E82BB50282005288C3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		CE43E7EA2BB51248005288C3 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		CE5071AA2BB3AEF800D3E924 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
@@ -145,7 +151,7 @@
 			children = (
 				BF66F59C2BC135E20042ECCF /* UserInfoView.swift */,
 				BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */,
-				BF66F5A22BC245BC0042ECCF /* UserInforViewBody.swift */,
+				BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				CEAB8FA42BB11B4800061C24 /* AppTitleLabel.swift */,
 				CEAB8FA62BB11C4C00061C24 /* AppBodyLabel.swift */,
 				CE43E7EA2BB51248005288C3 /* NetworkImage.swift */,
+				BFDA03C42BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -367,6 +374,8 @@
 			isa = PBXGroup;
 			children = (
 				CEAB8FB22BB12FD600061C24 /* UIViewControllerExt.swift */,
+				BFDA03D22BC3FFFD000F3D70 /* StringExt.swift */,
+				BFDA03D42BC40205000F3D70 /* DateExt.swift */,
 			);
 			name = Extentions;
 			path = "ễtntions";
@@ -581,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB8FC42BB2A72300061C24 /* NetworkManager.swift in Sources */,
+				BFDA03D32BC3FFFD000F3D70 /* StringExt.swift in Sources */,
 				CEAB8F5B2BABD23C00061C24 /* GHFollowers.xcdatamodeld in Sources */,
 				CEAB8FA52BB11B4800061C24 /* AppTitleLabel.swift in Sources */,
 				CEAB8FBD2BB2743E00061C24 /* FollowerResponse.swift in Sources */,
@@ -598,13 +608,15 @@
 				BF66F59F2BC135FC0042ECCF /* UserInfoViewController.swift in Sources */,
 				CEAB8F8A2BABE6F800061C24 /* TabBar.swift in Sources */,
 				BF66F59D2BC135E20042ECCF /* UserInfoView.swift in Sources */,
-				BF66F5A32BC245BC0042ECCF /* UserInforViewBody.swift in Sources */,
+				BFDA03C52BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift in Sources */,
+				BF66F5A32BC245BC0042ECCF /* UserInforCardView.swift in Sources */,
 				CE5071AB2BB3AEF800D3E924 /* FollowerCell.swift in Sources */,
 				CEAB8FA72BB11C4C00061C24 /* AppBodyLabel.swift in Sources */,
 				CEAB8F862BABE18500061C24 /* FavoriteListViewController.swift in Sources */,
 				CEAB8F942BAC333E00061C24 /* AppConfigures.swift in Sources */,
 				CE43E7E92BB50282005288C3 /* ImageLoader.swift in Sources */,
 				CEAB8F8E2BABEACB00061C24 /* AppButton.swift in Sources */,
+				BFDA03D52BC40205000F3D70 /* DateExt.swift in Sources */,
 				CEAB8F532BABD23C00061C24 /* SceneDelegate.swift in Sources */,
 				CEAB8FB02BB121BA00061C24 /* AlertView.swift in Sources */,
 				CE5071AF2BB3B3B700D3E924 /* FollowerListCollectionView.swift in Sources */,

@@ -21,6 +21,7 @@ final class AppBodyLabel: UILabel{
         lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
         self.numberOfLines = numberOfLines
+        
     }
     
     required init?(coder: NSCoder) {

@@ -10,7 +10,7 @@ import UIKit
 
 class AppButton: UIButton{
     
-    init(backgroundColor: UIColor, title: String){
+    init(backgroundColor: UIColor = .systemBackground, title: String = ""){
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
         self.setTitle(title,for: .normal)

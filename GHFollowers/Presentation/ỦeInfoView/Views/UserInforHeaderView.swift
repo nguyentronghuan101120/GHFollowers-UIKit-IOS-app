@@ -17,12 +17,13 @@ class UserInforHeaderView: UIView {
     
     var flowerLocation = AppBodyLabel()
     
-    var view: UIView!
     var data: UserDetailResponse!
     
-    func addSubView(view: UIView,data: UserDetailResponse){
-        self.view = view
+    func configureView(_ data: UserDetailResponse){
+        
         self.data = data
+        
+        translatesAutoresizingMaskIntoConstraints = false
         
         addAvatarView()
         addFollowerNickNameView()
@@ -34,32 +35,31 @@ class UserInforHeaderView: UIView {
     
     func addAvatarView(){
         
-        view.addSubview(followerAvatar)
+        self.addSubview(followerAvatar)
         
         loadImage(from: data.avatarUrl ?? "")
         
         NSLayoutConstraint.activate([
-            followerAvatar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            followerAvatar.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 16),
+            followerAvatar.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
             followerAvatar.widthAnchor.constraint(equalToConstant:100),
             followerAvatar.heightAnchor.constraint(equalToConstant: 100),
         ])
     }
     
     func addFollowerNickNameView(){
-        view.addSubview(followerNickName)
+        self.addSubview(followerNickName)
         
         followerNickName.text = data.login
         
         NSLayoutConstraint.activate([
             followerNickName.topAnchor.constraint(equalTo: followerAvatar.topAnchor),
             followerNickName.leadingAnchor.constraint(equalTo: followerAvatar.trailingAnchor, constant: 8),
-
+            
         ])
     }
     
     func addFollowerFullNameView(){
-        view.addSubview(followerFullName)
+        self.addSubview(followerFullName)
         
         followerFullName.text = data.name
         
@@ -70,7 +70,7 @@ class UserInforHeaderView: UIView {
     }
     
     func addFollowerLocation(){
-        view.addSubview(flowerLocation)
+        self.addSubview(flowerLocation)
         
         flowerLocation.text = data.location ?? "This user does not have location"
         
@@ -81,14 +81,15 @@ class UserInforHeaderView: UIView {
     }
     
     func addFollowerBioView(){
-        view.addSubview(followerBio)
+        self.addSubview(followerBio)
         
         followerBio.text = data.bio
         
         NSLayoutConstraint.activate([
             followerBio.topAnchor.constraint(equalTo: followerAvatar.bottomAnchor,constant: 8),
-            followerBio.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            followerBio.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
+            followerBio.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            followerBio.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            
         ])
     }
     
