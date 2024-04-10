@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UserInforHeaderView: UIView {
+class UserInfoHeaderView: UIView {
     var followerAvatar = FollowerAvatarImageView()
     var followerNickName = AppTitleLabel()
     var followerFullName = AppBodyLabel()

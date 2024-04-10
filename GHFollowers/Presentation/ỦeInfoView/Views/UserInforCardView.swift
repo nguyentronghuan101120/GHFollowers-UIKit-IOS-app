@@ -17,17 +17,10 @@ class UserInfoCardView: UIView{
     let cardButton = AppButton()
     
     let backgroundView = UIView()
-//    let followingTitle = AppTitleLabel()
-//    let followingCount = AppTitleLabel()
-//    let followerTitle = AppBodyLabel()
-//    let followerCount = AppBodyLabel()
-//    let getFollowersButton = AppButton()
-//    let followerIcon = UIImageView(image: UIImage(named: "heart"))
-//    let followingIcon = UIImageView(image: UIImage(named: "person.2"))
-//    
+    
     func configureViews(rightTitle: String, leftTitle: String,rightImageName: String, leftImageName: String, buttonTitle: String,rightCount: String, leftCount: String, buttonColor: UIColor){
         translatesAutoresizingMaskIntoConstraints = false
-
+        
         self.addSubview(backgroundView)
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.backgroundColor = .secondarySystemBackground
@@ -35,7 +28,7 @@ class UserInfoCardView: UIView{
         
         NSLayoutConstraint.activate([
             backgroundView.widthAnchor.constraint(equalTo:  backgroundView.self.widthAnchor),
-
+            
         ])
         
         backgroundView.addSubview(leftTitleLabelWithIcon)
@@ -43,7 +36,7 @@ class UserInfoCardView: UIView{
         backgroundView.addSubview(rightTitleLabelWithIcon)
         backgroundView.addSubview(rightCountBodyLabel)
         backgroundView.addSubview(cardButton)
-        
+
         leftTitleLabelWithIcon.titleLabelView.text = leftTitle
         rightTitleLabelWithIcon.titleLabelView.text = rightTitle
         
@@ -51,15 +44,15 @@ class UserInfoCardView: UIView{
         rightTitleLabelWithIcon.iconView.image = UIImage(systemName: rightImageName)
         
         cardButton.setTitle(buttonTitle, for: .normal)
-    
+        
         leftCountBodyLabel.text = rightCount
         rightCountBodyLabel.text = leftCount
-      
+        
         cardButton.setTitle(buttonTitle,for: .normal)
         cardButton.backgroundColor = buttonColor
         
         let padding = CGFloat(16)
-     
+        
         NSLayoutConstraint.activate([
             leftTitleLabelWithIcon.topAnchor.constraint(equalTo: self.topAnchor),
             leftTitleLabelWithIcon.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: padding),
@@ -77,7 +70,7 @@ class UserInfoCardView: UIView{
             cardButton.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: padding),
             cardButton.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -padding),
             cardButton.heightAnchor.constraint(equalToConstant: 55)
-        
+            
         ])
         
         NSLayoutConstraint.activate([
@@ -85,6 +78,7 @@ class UserInfoCardView: UIView{
             backgroundView.bottomAnchor.constraint(equalTo: cardButton.bottomAnchor,constant: padding),
             backgroundView.leadingAnchor.constraint(equalTo: cardButton.leadingAnchor,constant: -padding),
             backgroundView.trailingAnchor.constraint(equalTo: cardButton.trailingAnchor,constant: padding)
-  
-        ])    }
+            
+        ])
+    }
 }

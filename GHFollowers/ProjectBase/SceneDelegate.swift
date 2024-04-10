@@ -20,7 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = TabBar().createTabBar()
+        let userInfoVC = UserInfoViewController()
+        userInfoVC.userName = "sco"
+        window?.rootViewController = userInfoVC
+//        window?.rootViewController = TabBar().createTabBar()
         window?.makeKeyAndVisible()
         
         AppConfigures().configureAppNavigationBar()

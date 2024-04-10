@@ -176,8 +176,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "FollowersListViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -272,7 +272,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
             endingLineNumber = "96"
-            landmarkName = "updateData()"
+            landmarkName = "configureDataSource()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -320,8 +320,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "updateData()"
-            landmarkType = "7">
+            landmarkName = "FollowersListViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "402E7621-3CCF-42D9-8F3D-1DFECBCD8232 - 38680e4343e7fad5"
@@ -428,7 +428,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
             endingLineNumber = "84"
-            landmarkName = "configureDataSource()"
+            landmarkName = "getListFollowers(page:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -506,8 +506,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
-            landmarkName = "configureDataSource()"
-            landmarkType = "7">
+            landmarkName = "FollowersListViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "B0F17597-4968-42BC-920B-DC0DD503C1F2 - b0f8f873dad606e3"
@@ -602,7 +602,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "updateData()"
+            landmarkName = "updateData(on:)"
             landmarkType = "7">
             <Locations>
                <Location

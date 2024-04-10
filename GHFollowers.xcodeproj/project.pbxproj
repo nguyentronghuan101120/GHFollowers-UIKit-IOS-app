@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF66F59D2BC135E20042ECCF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59C2BC135E20042ECCF /* UserInfoView.swift */; };
 		BF66F59F2BC135FC0042ECCF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */; };
-		BF66F5A12BC245AF0042ECCF /* UserInforHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */; };
+		BF66F5A12BC245AF0042ECCF /* UserInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A02BC245AF0042ECCF /* UserInfoHeaderView.swift */; };
 		BF66F5A32BC245BC0042ECCF /* UserInforCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */; };
 		BFDA03C52BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA03C42BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift */; };
 		BFDA03D32BC3FFFD000F3D70 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA03D22BC3FFFD000F3D70 /* StringExt.swift */; };
@@ -68,7 +68,7 @@
 /* Begin PBXFileReference section */
 		BF66F59C2BC135E20042ECCF /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		BF66F59E2BC135FC0042ECCF /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
-		BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforHeaderView.swift; sourceTree = "<group>"; };
+		BF66F5A02BC245AF0042ECCF /* UserInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderView.swift; sourceTree = "<group>"; };
 		BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInforCardView.swift; sourceTree = "<group>"; };
 		BFDA03C42BC3AC35000F3D70 /* AppLabelWithLeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabelWithLeadingIcon.swift; sourceTree = "<group>"; };
 		BFDA03D22BC3FFFD000F3D70 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BF66F59C2BC135E20042ECCF /* UserInfoView.swift */,
-				BF66F5A02BC245AF0042ECCF /* UserInforHeaderView.swift */,
+				BF66F5A02BC245AF0042ECCF /* UserInfoHeaderView.swift */,
 				BF66F5A22BC245BC0042ECCF /* UserInforCardView.swift */,
 			);
 			path = Views;
@@ -601,7 +601,7 @@
 				CEAB8F922BAC2B0C00061C24 /* FollowersListViewController.swift in Sources */,
 				CEAB8F512BABD23C00061C24 /* AppDelegate.swift in Sources */,
 				CEA6080C2BBD522100B7C733 /* EmptyView.swift in Sources */,
-				BF66F5A12BC245AF0042ECCF /* UserInforHeaderView.swift in Sources */,
+				BF66F5A12BC245AF0042ECCF /* UserInfoHeaderView.swift in Sources */,
 				CE5071AD2BB3AFA400D3E924 /* FollowerAvatarImageView.swift in Sources */,
 				CEAB8FC62BB2A9E800061C24 /* NetworkError.swift in Sources */,
 				CEAB8F842BABE0FC00061C24 /* SearchViewController.swift in Sources */,

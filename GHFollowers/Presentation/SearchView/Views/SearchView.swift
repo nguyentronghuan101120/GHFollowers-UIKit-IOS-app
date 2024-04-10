@@ -54,7 +54,6 @@ final class SearchView{
     func addCallToActionButton(view: UIView){
         view.addSubview(callToActionButton)
 
-        
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -50),
             

@@ -39,15 +39,21 @@ class UserInfoViewController: UIViewController{
                 
                 self.dismissLoadingView()
                 
-                
                 view.addSubview(userInfoView)
-                userInfoView.configureViews(data,view)
+                userInfoView.configureViews(data: data, parentView: view)
                 
             } catch {
                 presentAlertOnMainThread(title: "Error", message: error.localizedDescription, buttonTitle: "OK")
                 self.dismissLoadingView()
             }
         }
+    }
+    
+}
+
+extension UserInfoViewController: ButtonDelegate{
+    func buttonTapped() {
+        print("hello")
     }
     
     
